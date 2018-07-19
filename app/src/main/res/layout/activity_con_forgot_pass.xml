@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context=".GetStartedActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageButton
+            android:id="@+id/backarrow"
+            android:layout_width="11dp"
+            android:layout_height="21dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start|top"
+            android:background="@color/white"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            style="@style/forgot_pas"
+            android:textSize="29sp"
+            android:textColor="@color/talad_green"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dip"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your phone number to reset your Password!"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="80dip"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/talad_green"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/newPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="Phone Number"
+            style="@style/phone_numb"
+            android:textColorHint="@color/talad_green"
+            android:imeOptions="actionUnspecified"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/talad_green"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btnCont"
+            style="@style/cont"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="86dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rect6"
+            android:backgroundTint="@color/talad_green"
+            android:text="CONTINUE"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

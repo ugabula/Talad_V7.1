@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <ImageButton
+            android:layout_width="11dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:background="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start|top" />
+
+        <ImageButton
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/bt_ic_camera"
+            android:background="@drawable/photo_layer_list"
+            android:id="@+id/uploadphoto"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPLOAD"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/talad_green"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:focusableInTouchMode="true"
+            android:hint="Name"
+            style="@style/phone_numb"
+            android:textColorHint="@color/talad_green"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textAutoComplete"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:focusableInTouchMode="true"
+            android:hint="Address"
+            style="@style/phone_numb"
+            android:textColorHint="@color/talad_green"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textAutoComplete"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:focusableInTouchMode="true"
+            android:hint="Email"
+            style="@style/phone_numb"
+            android:textColorHint="@color/talad_green"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:focusableInTouchMode="true"
+            android:hint="Phone Number"
+            style="@style/phone_numb"
+            android:textColorHint="@color/talad_green"
+            android:imeOptions="actionUnspecified"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:focusableInTouchMode="true"
+            android:hint="Password"
+            style="@style/phone_numb"
+            android:textColorHint="@color/talad_green"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/confirmpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:focusableInTouchMode="true"
+            android:hint="Confirm Password"
+            style="@style/phone_numb"
+            android:textColorHint="@color/talad_green"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCont"
+        style="@style/cont"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/rect6"
+        android:backgroundTint="@color/talad_green"
+        android:text="CONTINUE"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</android.support.design.widget.CoordinatorLayout>

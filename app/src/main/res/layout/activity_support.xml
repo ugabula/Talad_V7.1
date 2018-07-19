@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GetStartedActivity"
+    android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/backarrow"
+        android:layout_width="11dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_blue_arrow_back"
+        android:background="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="start|top"/>
+
+    <TextView
+        android:id="@+id/support"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/backarrow"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Support"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/backarrow"
+        android:layout_below="@+id/backarrow"
+        android:layout_marginTop="59dp"
+        android:text="Email"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/emailaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/email"
+        android:layout_alignBottom="@+id/email"
+        android:layout_alignEnd="@+id/support"
+        android:text="contact@talad.com"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="30dp"
+        android:layout_toStartOf="@+id/support"
+        android:text="Phone"
+        android:textColor="@color/blue"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/phonenumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/emailaddress"
+        android:layout_alignTop="@+id/phone"
+        android:text="123 - 456 - 7890"
+        android:textColor="@color/black"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/faq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phonenumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="FAQ"
+        android:textColor="@color/blue"
+        android:textSize="20sp" />
+
+</RelativeLayout>

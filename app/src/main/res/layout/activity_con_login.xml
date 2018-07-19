@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    tools:context=".GetStartedActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <Spinner
+            android:id="@+id/register.country_codes_spinner"
+            style="@style/TextViewSpinnerItem"
+            android:layout_width="31dp"
+            android:layout_height="17dp"
+            android:clipToPadding="true"
+            android:layout_gravity="right"
+            android:background="@drawable/en_flag"
+            android:padding="0dp"
+            android:spinnerMode="dialog"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="@dimen/logo_w_h"
+            android:layout_height="97dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/new_logo" />
+
+        <ImageView
+            android:layout_width="@dimen/logo_w_h"
+            android:layout_height="28dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/talad" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/talad_green"
+            style="@style/or"
+            android:layout_margin="10dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColorHint="@color/talad_green"
+                style="@style/phone_numb"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                android:inputType="textVisiblePassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/talad_green"
+                style="@style/password"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/forgotPassword"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:text="@string/btn_forgot_password"
+            android:textAllCaps="false"
+            android:textColor="@color/talad_green"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/login"
+            style="@style/log_in"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rect6"
+            android:backgroundTint="@color/talad_green"
+            android:text="LOGIN"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:background="@color/talad_green"
+            style="@style/or"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textSize="12sp"
+            android:textColor="@color/talad_green"/>
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:background="@color/talad_green"
+            style="@style/or"
+            android:layout_margin="10dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/create"
+            style="@style/create_acc"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:backgroundTint="@color/greyish"
+            android:text="Create Account"
+            android:textStyle="bold" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--&lt;!&ndash; Link to Login Screen &ndash;&gt;-->
+
+            <!--<Button-->
+                <!--android:id="@+id/createAccount"-->
+                <!--android:layout_width="150dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dip"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:background="@null"-->
+                <!--android:text="Create Account"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="@color/talad_green"-->
+                <!--android:textSize="12sp" />-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone" />
+</android.support.design.widget.CoordinatorLayout>

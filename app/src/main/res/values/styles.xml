@@ -1,0 +1,155 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/indigo</item>
+        <item name="colorControlActivated">@color/pink</item>
+    </style>
+
+    <!--<style name="ListFont" parent="@android:style/Widget.ListView">-->
+    <!--<item name="android:textColor">@color/white</item>-->
+    <!--<item name="android:typeface">sans</item>-->
+    <!--</style>-->
+
+    <!--NIBO-->
+    <style name="NiboActivityStyle" parent="NiboOrigDestTheme.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">
+            @color/colorPrimaryDark
+        </item>
+
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="originRoundViewStyle">@style/OriginCircleViewTheme</item>
+        <item name="destinationRoundViewStyle">@style/DestinationCircleViewTheme</item>
+        <item name="originDestinationSeperatorLineColor">@color/white</item>
+        <item name="editTextClearerIcon">@drawable/ic_close_grey600_18dp</item>
+        <item name="detailsBackground">@color/colorPrimary</item>
+        <item name="appBarBackground">@color/colorPrimary</item>
+        <item name="navigationIcon">@drawable/ic_close_white_24dp</item>
+
+        <item name="distanceDurationTextColor">@color/white</item>
+        <item name="originDestinationTextColor">@color/white</item>
+        <item name="progressBarColor">@color/colorAccent</item>
+
+        <item name="origEditTextHint">@string/origin_hint</item>
+        <item name="destEditTextHint">@string/destination_hint</item>
+
+        <item name="origEditTextHintColor">#808080</item>
+        <item name="destEditTextHintColor">#808080</item>
+
+        <item name="origEditTextTextColor">@color/black</item>
+        <item name="destEditTextTextColor">@color/black</item>
+
+        <item name="originEditTextBg">@color/white</item>
+        <item name="destEditTextBg">@color/white</item>
+
+        <item name="doneFabColorRes">@color/colorAccent</item>
+        <item name="primaryPolyLineColor">@drawable/ic_navigation_def</item>
+
+        <item name="suggestionItemTitleTextColor">@color/white</item>
+        <item name="suggestionItemSubtitleTextColor">@color/white</item>
+        <item name="suggestionItemSeperatorLineColor">@color/white</item>
+        <item name="suggestionItemLeftIconTintColor">@color/white</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="OriginCircleViewTheme">
+        <item name="colorSelected">@color/colorAccent</item>
+        <item name="colorUnselected">@color/white</item>
+    </style>
+
+    <style name="DestinationCircleViewTheme">
+        <item name="colorSelected">@color/colorAccent</item>
+        <item name="colorUnselected">@color/white</item>
+    </style>
+
+    <!-- Text style for "log_in" -->
+    <!-- Add this snippet to styles.xml. -->
+    <style name="log_in">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Text style for "create_acc" -->
+    <!-- Add this snippet to styles.xml. -->
+    <style name="create_acc">
+        <item name="android:textColor">#ff6a6d70</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Text style for "or" -->
+    <!-- Add this snippet to styles.xml. -->
+    <style name="or">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Text style for "fabian_kos" -->
+    <!-- Add this snippet to styles.xml. -->
+    <style name="fabian_kos">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <!-- Text style for "forgot_pas" -->
+    <!-- Add this snippet to styles.xml. -->
+    <style name="forgot_pas">
+        <item name="android:textColor">#ff61b765</item>
+        <item name="android:textSize">29sp</item>
+    </style>
+
+    <!-- Text style for "continue" -->
+    <!-- Add this snippet to styles.xml. -->
+    <style name="cont">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Text style for "phone_numb" -->
+    <!-- Add this snippet to styles.xml. -->
+    <style name="phone_numb">
+        <item name="android:textColor">#ff61b765</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- Text style for "password" -->
+    <!-- Add this snippet to styles.xml. -->
+    <style name="password">
+        <item name="android:textColor">#ff61b765</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- Text style for "payment_me" -->
+    <!-- Add this snippet to styles.xml. -->
+    <style name="payment_me">
+        <item name="android:textColor">#ff61b765</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="TextViewSpinnerItem" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+</resources>

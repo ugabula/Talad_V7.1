@@ -1,0 +1,267 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.OngoingFragment">
+
+    <ImageView
+        android:id="@+id/imageView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:src="@drawable/user" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="151dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/imageView57"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="1dp"
+        android:text="Hien Huynh"
+        android:textColor="#111"
+        android:textSize="21dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="151dp"
+        android:layout_height="14dp"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_below="@+id/imageView57"
+        android:layout_marginTop="27dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="Chang Wat Khon Kaen"
+        android:textColor="#111"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="151dp"
+        android:layout_height="14dp"
+        android:layout_below="@+id/textView18"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="FARMER"
+        android:textColor="@color/blue"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_below="@+id/textView20"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="47dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/map_corner"
+        android:id="@+id/imageView56" />
+
+    <Button
+        android:id="@+id/btnReq"
+        style="@style/cont"
+        android:layout_width="234dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rect6"
+        android:backgroundTint="@color/blue"
+        android:text="Request a Contractor"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView56"
+        android:layout_toEndOf="@+id/imageView56"
+        android:text="Furrowing"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="42dp"
+        android:layout_height="12dp"
+        android:layout_alignEnd="@+id/btnReq"
+        android:layout_alignTop="@+id/textView1"
+        android:text="June 12"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="259dp"
+        android:layout_height="12dp"
+        android:layout_below="@+id/textView1"
+        android:layout_toEndOf="@+id/imageView56"
+        android:text="Rural Road Tambon Sui Mun, Amphoe Nam…"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView56"
+        android:layout_marginBottom="11dp"
+        android:layout_toEndOf="@+id/imageView56"
+        android:text="Fabian Kostrhon"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignEnd="@+id/imageView57"
+        android:text="1.3 rai - ฿910"
+        android:textSize="10sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignEnd="@+id/textView2"
+        android:background="@drawable/phone"
+        android:src="@drawable/small_phone" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_alignStart="@+id/imageView56"
+        android:layout_below="@+id/imageView56"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/map_corner" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toEndOf="@+id/imageView1"
+        android:text="Seeding"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="42dp"
+        android:layout_height="12dp"
+        android:layout_alignEnd="@+id/imageButton2"
+        android:layout_alignTop="@+id/textView6"
+        android:text="June 1"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="259dp"
+        android:layout_height="12dp"
+        android:layout_below="@+id/textView6"
+        android:layout_toEndOf="@+id/imageView1"
+        android:text="Rural Road Tambon Sui Mun, Amphoe Nam…"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginBottom="11dp"
+        android:layout_toEndOf="@+id/imageView1"
+        android:text="Fabian Kostrhon"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView9"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignStart="@+id/textView5"
+        android:text="1.3 rai - ฿910"
+        android:textSize="10sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignEnd="@+id/textView7"
+        android:background="@drawable/phone"
+        android:src="@drawable/small_phone" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_alignStart="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/map_corner" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:text="Ploughing"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="42dp"
+        android:layout_height="12dp"
+        android:layout_alignEnd="@+id/imageButton3"
+        android:layout_alignTop="@+id/textView11"
+        android:text="May 29"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="259dp"
+        android:layout_height="12dp"
+        android:layout_below="@+id/textView11"
+        android:layout_toEndOf="@+id/imageView2"
+        android:text="Rural Road Tambon Sui Mun, Amphoe Nam…"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="11dp"
+        android:layout_toEndOf="@+id/imageView2"
+        android:text="Fabian Kostrhon"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView14"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignStart="@+id/textView10"
+        android:text="1.3 rai - ฿910"
+        android:textSize="10sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignEnd="@+id/textView12"
+        android:background="@drawable/phone"
+        android:src="@drawable/small_phone" />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Style for "oval_8" -->
+    <!-- Add this snippet to layer-list xml in drawable. -->
+    <item android:width="108dp" android:height="108dp">
+        <shape android:shape="oval">
+            <solid android:color="#ffd8d8d8" />
+            <item android:name="android:shadowColor">#1f000000</item>
+            <!-- TextView shadow offsets do not respect scale. -->
+            <item android:name="android:shadowDx">0</item>
+            <item android:name="android:shadowDy">4</item>
+        </shape>
+    </item>
+</layer-list>

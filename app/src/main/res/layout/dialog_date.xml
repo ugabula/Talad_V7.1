@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/opentext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="22dp"
+        android:text="Tuesday" />
+
+    <View
+        android:id="@+id/viewdialog"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/opentext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:background="@color/greyish" />
+
+    <TextView
+        android:id="@+id/uploadtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewdialog"
+        android:layout_marginStart="27dp"
+        android:layout_toEndOf="@+id/opentext"
+        android:text="June 31" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/opentext"
+        android:layout_below="@+id/viewdialog"
+        android:layout_marginTop="32dp"
+        android:text="8:00 - 12:00"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_below="@+id/textView17"
+        android:layout_marginTop="26dp"
+        android:text="13:00 - 15:00"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_below="@+id/textView18"
+        android:layout_marginTop="27dp"
+        android:text="15:30 - 17:00"
+        android:textSize="17sp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="106dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/textView17"
+        android:layout_alignBottom="@+id/textView17"
+        android:layout_toEndOf="@+id/uploadtext"
+        android:background="@drawable/rect6"
+        android:backgroundTint="@color/blue"
+        android:text="Furrowing"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="106dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignStart="@+id/button4"
+        android:background="@drawable/rect6"
+        android:backgroundTint="@color/blue"
+        android:text="Plowing"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="106dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/textView19"
+        android:layout_alignStart="@+id/button2"
+        android:background="@drawable/rect6"
+        android:backgroundTint="@color/blue"
+        android:text="Fertilizer"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/uploadtext"
+        android:layout_marginEnd="12dp"
+        app:srcCompat="@drawable/ic_close_black_18dp" />
+
+</RelativeLayout>

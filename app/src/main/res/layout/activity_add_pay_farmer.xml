@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+
+        <ImageButton
+            android:id="@+id/backarrow"
+            android:layout_width="11dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_blue_arrow_back"
+            android:background="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start|top"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment Method"
+            style="@style/payment_me"
+            android:textSize="17sp"
+            android:textColor="@color/blue"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@id/imageView11"
+            android:layout_marginTop="50.0dip"
+            android:orientation="vertical"
+            tools:ignore="UnknownId">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@id/imageView9"
+                    android:layout_width="28.0dip"
+                    android:layout_height="28.0dip"
+                    android:layout_centerVertical="false"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_marginTop="20.0dip"
+                    app:srcCompat="@drawable/bank" />
+
+                <TextView
+                    android:id="@+id/bank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/imageView9"
+                    android:layout_marginStart="28dp"
+                    android:layout_toEndOf="@+id/imageView9"
+                    android:text="BANK ACCOUNT"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:id="@id/imageView10"
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:layout_centerVertical="false"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="18.0dip"
+                    android:src="@drawable/card"/>
+
+                <TextView
+                    android:id="@+id/card"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_toEndOf="@+id/imageView10"
+                    android:text="CARD"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@id/imageView6"
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:layout_centerVertical="false"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="18.0dip"
+                    app:srcCompat="@drawable/cash" />
+
+                <TextView
+                    android:id="@+id/cash"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_toEndOf="@+id/imageView6"
+                    android:text="CASH"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@id/imageView5"
+                    android:layout_width="32.0dip"
+                    android:layout_height="32.0dip"
+                    android:layout_centerVertical="false"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="18.0dip"
+                    app:srcCompat="@drawable/paypal" />
+
+                <TextView
+                    android:id="@+id/paypal"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="28dp"
+                    android:layout_toEndOf="@+id/imageView5"
+                    android:text="PayPal"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "2765739363",
+    "firebase_url": "https://taladv7.firebaseio.com",
+    "project_id": "taladv7",
+    "storage_bucket": "taladv7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2765739363:android:327da71cc92e14c1",
+        "android_client_info": {
+          "package_name": "talad.co.taladv7"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2765739363-sp1asmoi0rq39p5ej0qau471djacbr52.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "2765739363-sp1asmoi0rq39p5ej0qau471djacbr52.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ--cmZtcNlnUPGGtJRsJb92kAK2jEH-c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Style for "line_copy_" -->
+    <!-- Add this snippet to layer-list xml in drawable. -->
+    <item android:width="294dp" android:height="1dp">
+        <shape android:shape="rectangle">
+            <stroke android:width="2dp" android:color="#ff61b765" />
+            <item android:name="android:shadowColor">#38000000</item>
+            <!-- TextView shadow offsets do not respect scale. -->
+            <item android:name="android:shadowDx">0</item>
+            <item android:name="android:shadowDy">-1</item>
+        </shape>
+    </item>
+
+    <!-- Style for "line_copy_" -->
+    <!-- Add this snippet to layer-list xml in drawable. -->
+    <item android:width="294dp" android:height="1dp">
+        <shape android:shape="rectangle">
+            <stroke android:width="2dp" android:color="#ff61b765" />
+            <item android:name="android:shadowColor">#42000000</item>
+            <!-- TextView shadow offsets do not respect scale. -->
+            <item android:name="android:shadowDx">0</item>
+            <item android:name="android:shadowDy">2</item>
+        </shape>
+    </item>
+</layer-list>
