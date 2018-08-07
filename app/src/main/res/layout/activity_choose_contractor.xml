@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/thaitext"
         android:layout_alignTop="@+id/english"
-        android:text="Fabian Kostrhon "
+        android:text="Fabian Kostrhon"
         android:textSize="17sp"
         android:textStyle="bold" />
 
@@ -64,46 +64,17 @@
         android:text="฿800/Rai"
         android:textSize="13sp"/>
 
-    <ImageView
-        android:id="@+id/imageView30"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/corntext"
-        android:layout_marginStart="11dp"
-        android:layout_toEndOf="@+id/textView11"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView31"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/corntext"
-        android:layout_toEndOf="@+id/imageView30"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView32"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/corntext"
-        android:layout_toEndOf="@+id/imageView31"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView33"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/corntext"
-        android:layout_toEndOf="@+id/imageView32"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView34"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/corntext"
-        android:layout_toEndOf="@+id/imageView33"
-        app:srcCompat="@drawable/fade_star" />
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignStart="@+id/ratingBar1"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="@color/talad_green"
+        android:stepSize="0.1" />
 
     <RadioButton
         android:id="@+id/radioButton_en"
@@ -144,46 +115,17 @@
         android:text="฿800/Rai"
         android:textSize="13sp"/>
 
-    <ImageView
-        android:id="@+id/imageView35"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_marginStart="11dp"
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ratingBar4"
         android:layout_below="@+id/thaitext"
-        android:layout_toEndOf="@+id/textView12"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView36"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/thaitext"
-        android:layout_toEndOf="@+id/imageView35"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView37"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/thaitext"
-        android:layout_toEndOf="@+id/imageView36"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView38"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/thaitext"
-        android:layout_toEndOf="@+id/imageView37"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView39"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/thaitext"
-        android:layout_toEndOf="@+id/imageView38"
-        app:srcCompat="@drawable/fade_star" />
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="@color/talad_green"
+        android:stepSize="0.1" />
 
     <RadioButton
         android:id="@+id/radioButton_thai"
@@ -223,46 +165,17 @@
         android:text="฿800/Rai"
         android:textSize="13sp"/>
 
-    <ImageView
-        android:id="@+id/imageView40"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_marginStart="11dp"
-        android:layout_below="@+id/mieltext"
-        android:layout_toEndOf="@+id/textView13"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView41"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/mieltext"
-        android:layout_toEndOf="@+id/imageView40"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView42"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/mieltext"
-        android:layout_toEndOf="@+id/imageView41"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView43"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/mieltext"
-        android:layout_toEndOf="@+id/imageView42"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView44"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/mieltext"
-        android:layout_toEndOf="@+id/imageView43"
-        app:srcCompat="@drawable/fade_star" />
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignStart="@+id/ratingBar1"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="@color/talad_green"
+        android:stepSize="0.1" />
 
     <RadioButton
         android:id="@+id/radioButton_miel"
@@ -302,46 +215,17 @@
         android:text="฿800/Rai"
         android:textSize="13sp"/>
 
-    <ImageView
-        android:id="@+id/imageView45"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_marginStart="11dp"
-        android:layout_below="@+id/ricetext"
-        android:layout_toEndOf="@+id/textView14"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView46"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/ricetext"
-        android:layout_toEndOf="@+id/imageView45"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView47"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/ricetext"
-        android:layout_toEndOf="@+id/imageView46"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView48"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/ricetext"
-        android:layout_toEndOf="@+id/imageView47"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView49"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/ricetext"
-        android:layout_toEndOf="@+id/imageView48"
-        app:srcCompat="@drawable/fade_star" />
+    <RatingBar
+        android:id="@+id/ratingBar3"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignStart="@+id/ratingBar4"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="@color/talad_green"
+        android:stepSize="0.1" />
 
     <RadioButton
         android:id="@+id/radioButton_rice"
@@ -381,46 +265,18 @@
         android:text="฿800/Rai"
         android:textSize="13sp"/>
 
-    <ImageView
-        android:id="@+id/imageView50"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_marginStart="11dp"
+    <RatingBar
+        android:id="@+id/ratingBar4"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/pinetext"
+        android:layout_marginStart="13dp"
         android:layout_toEndOf="@+id/textView15"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView51"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/pinetext"
-        android:layout_toEndOf="@+id/imageView50"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView52"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/pinetext"
-        android:layout_toEndOf="@+id/imageView51"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView53"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/pinetext"
-        android:layout_toEndOf="@+id/imageView52"
-        app:srcCompat="@drawable/star" />
-
-    <ImageView
-        android:id="@+id/imageView54"
-        android:layout_width="14dp"
-        android:layout_height="13dp"
-        android:layout_below="@+id/pinetext"
-        android:layout_toEndOf="@+id/imageView53"
-        app:srcCompat="@drawable/fade_star" />
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="@color/talad_green"
+        android:stepSize="0.1" />
 
     <RadioButton
         android:id="@+id/radioButton_pine"

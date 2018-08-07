@@ -65,6 +65,10 @@ dependencies {
 
     // For map calculations
     implementation 'com.google.maps.android:android-maps-utils:0.3.4'
+
+    //slide button
+    implementation 'com.shitij.goyal:slide-button:1.0.0'
+    implementation 'com.github.MAXDeliveryNG:slideview:1.1.0'
 }
 
 configurations.all {

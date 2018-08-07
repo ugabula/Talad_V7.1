@@ -2,11 +2,16 @@ package talad.co.taladv7;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 
 import com.mikepenz.materialdrawer.AccountHeader;
 import com.mikepenz.materialdrawer.AccountHeaderBuilder;
@@ -19,25 +24,38 @@ import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.mikepenz.materialdrawer.model.interfaces.IProfile;
 
+import talad.co.taladv7.fragment.ConNotifyFragment;
+import talad.co.taladv7.fragment.ConOngoingFragment;
+import talad.co.taladv7.fragment.ConScheduleFragment;
+import talad.co.taladv7.helper.BottomNavigationBehavior;
+
 /**
- * Created by cvanderhaar on 2018/07/09.
+ * Created by cvanderhaar on 2018/08/02.
  */
 
-public class ConChooseServiceActivity extends AppCompatActivity {
+public class ConTabMainActivity extends AppCompatActivity {
 
-    Button btnBuy, btnProvide;
-    Toolbar toolbarHome;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_con_mode);
+        setContentView(R.layout.con_bottom_tabs);
 
-        btnBuy = (Button) findViewById(R.id.buy);
-        btnProvide = (Button) findViewById(R.id.provide);
-        toolbarHome = (Toolbar) findViewById(R.id.toolBarHome);
-        toolbarHome.setTitle("Talad");
-        toolbarHome.setTitleTextColor(getResources().getColor(R.color.white));
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("Talad");
+        toolbar.setTitleTextColor(getResources().getColor(R.color.blue));
+
+        BottomNavigationView conmenu = (BottomNavigationView) findViewById(R.id.conmenu);
+        conmenu.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        // attaching bottom sheet behaviour - hide / show on scroll
+        CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) conmenu.getLayoutParams();
+        layoutParams.setBehavior(new BottomNavigationBehavior());
+
+        // load the store fragment by default
+//        toolbar.setTitle("Ongoing");
+        loadFragment(new ConOngoingFragment());
 
         //NAV DRAWER STARTS Account header for Nav drawer
         // Create the AccountHeader
@@ -58,35 +76,29 @@ public class ConChooseServiceActivity extends AppCompatActivity {
         //if you want to update the items at a later time it is recommended to keep it in a variable
         PrimaryDrawerItem item1 = new PrimaryDrawerItem().withIdentifier(1).withName("Home");//Hard coded string
         SecondaryDrawerItem item2 = new SecondaryDrawerItem().withIdentifier(2).withName("Edit Profile");
-        SecondaryDrawerItem item3 = new SecondaryDrawerItem().withIdentifier(2).withName("Your Services");
-        SecondaryDrawerItem item4 = new SecondaryDrawerItem().withIdentifier(2).withName("Your Machinery");
-        SecondaryDrawerItem item5 = new SecondaryDrawerItem().withIdentifier(2).withName("Your Availability");
-        SecondaryDrawerItem item6 = new SecondaryDrawerItem().withIdentifier(3).withName("Payment");
-        SecondaryDrawerItem item7 = new SecondaryDrawerItem().withIdentifier(4).withName("Support");
-        SecondaryDrawerItem item8 = new SecondaryDrawerItem().withIdentifier(5).withName("Feedback");
-        SecondaryDrawerItem item9 = new SecondaryDrawerItem().withIdentifier(6).withName("Settings");
-        SecondaryDrawerItem item10 = new SecondaryDrawerItem().withIdentifier(7).withName("Switch Mode");
-        SecondaryDrawerItem item11 = new SecondaryDrawerItem().withIdentifier(8).withName("LogOut").withIcon(R.drawable.user);
+        SecondaryDrawerItem item3 = new SecondaryDrawerItem().withIdentifier(3).withName("Payment");
+        SecondaryDrawerItem item4 = new SecondaryDrawerItem().withIdentifier(4).withName("Support");
+        SecondaryDrawerItem item5 = new SecondaryDrawerItem().withIdentifier(5).withName("Feedback");
+        SecondaryDrawerItem item6 = new SecondaryDrawerItem().withIdentifier(6).withName("Settings");
+        SecondaryDrawerItem item7 = new SecondaryDrawerItem().withIdentifier(7).withName("Switch Mode");
+        SecondaryDrawerItem item8 = new SecondaryDrawerItem().withIdentifier(8).withName("LogOut").withIcon(R.drawable.user);
 
         //create the drawer and remember the `Drawer` result object
         Drawer result = new DrawerBuilder()
                 .withActivity(this)
-                .withToolbar(toolbarHome)
+                .withToolbar(toolbar)
                 .withAccountHeader(headerResult)
                 .addDrawerItems(
                         item1,
                         item2,
+                        new DividerDrawerItem(),//divides draws
                         item3,
                         item4,
                         item5,
-                        new DividerDrawerItem(),//divides draws
                         item6,
                         item7,
-                        item8,
-                        item9,
-                        item10,
                         new DividerDrawerItem(),
-                        item11,
+                        item8,
                         new SecondaryDrawerItem()
 
                 )
@@ -135,12 +147,46 @@ public class ConChooseServiceActivity extends AppCompatActivity {
                 .build();
         //End of Nav drawer
 
-        btnProvide.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent choose = new Intent(ConChooseServiceActivity.this, ConTabMainActivity.class);
-                startActivity(choose);
+}
+
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            Fragment fragment;
+            switch (item.getItemId()) {
+                case R.id.ongoing:
+                    //toolbar.setTitle("Ongoing");
+                    fragment = new ConOngoingFragment();
+                    loadFragment(fragment);
+                    return true;
+                case R.id.schdule:
+                    //toolbar.setTitle("Schedule");
+                    fragment = new ConScheduleFragment();
+                    loadFragment(fragment);
+                    return true;
+                case R.id.notify:
+                    //toolbar.setTitle("Schedule");
+                    fragment = new ConNotifyFragment();
+                    loadFragment(fragment);
+                    return true;
             }
-        });
+
+            return false;
+        }
+    };
+
+    /**
+     * loading fragment into FrameLayout
+     *
+     * @param fragment
+     */
+    private void loadFragment(Fragment fragment) {
+        // load fragment
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame_container, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 }

@@ -41,8 +41,11 @@
         <activity android:name=".ContractorLoginActivity"/>
         <activity android:name=".FarmerChooseServiceActivity"/>
         <activity android:name=".BottomTabsActivity"/>
+        <activity android:name=".map.NiboMainActivity"/>
+        <activity android:name=".map.MapActivity"/>
         <activity android:name=".FarmerForgotPasswordActivity"/>
         <activity android:name=".ConChooseServiceActivity"/>
+        <activity android:name=".ConTabMainActivity"/>
     </application>
 
 </manifest>

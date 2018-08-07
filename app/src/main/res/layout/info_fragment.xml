@@ -1,16 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center">
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnReq"
+        style="@style/cont"
+        android:layout_width="234dp"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/rect6"
+        android:backgroundTint="@color/blue"
+        android:text="Request this Service"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Info Fragment"
-        android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnReq"
+        android:layout_marginTop="129dp"
+        android:text="Machinery Model"
+        android:textColor="@color/talad_green"
+        android:textSize="12sp" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnReq"
+        android:layout_alignTop="@+id/textView24"
+        android:text="Year"
+        android:textSize="12sp"
+        android:textColor="@color/talad_green"/>
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView24"
+        android:layout_below="@+id/textView24"
+        android:layout_marginTop="11dp"
+        android:text="John Deere"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView26"
+        android:layout_alignEnd="@+id/btnReq"
+        android:text="2012"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView26"
+        android:layout_below="@+id/textView26"
+        android:layout_marginTop="14dp"
+        android:text="Hours Completed"
+        android:textColor="@color/talad_green"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView28"
+        android:layout_alignEnd="@+id/textView27"
+        android:text="Services"
+        android:textSize="12sp"
+        android:textColor="@color/talad_green"/>
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView28"
+        android:layout_below="@+id/textView28"
+        android:layout_marginTop="13dp"
+        android:text="800"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView30"
+        android:layout_alignEnd="@+id/textView29"
+        android:layout_alignTop="@+id/textView30"
+        android:text="Primary Ploughing"
+        android:textSize="17sp"/>
+
+    <ImageView
+        android:id="@+id/imageView61"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/btnReq"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp"
+        app:srcCompat="@drawable/tractor2" />
+
+</RelativeLayout>

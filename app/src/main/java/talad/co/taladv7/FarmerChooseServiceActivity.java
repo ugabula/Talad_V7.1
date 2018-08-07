@@ -136,5 +136,13 @@ public class FarmerChooseServiceActivity extends AppCompatActivity {
                 startActivity(buy);
             }
         });
+
+        btnProvide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent provide = new Intent(FarmerChooseServiceActivity.this, ConTabMainActivity.class);
+                startActivity(provide);
+            }
+        });
     }
 }

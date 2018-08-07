@@ -7,10 +7,19 @@
     android:gravity="center">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:height="272dp"
         android:layout_height="wrap_content"
-        android:text="Review Fragment"
-        android:textSize="20sp"
-        android:textStyle="bold"/>
+        android:layout_width="fill_parent"
+        android:lineSpacingMultiplier="1.14"
+        android:text="                      “He did a fantastic job”
+                        “Would definitely hire him again”
+                        “Great communication and service.”
+                        “He did a fantastic job”
+                        “Would definitely hire him again”
+                        “Great communication and service.”
+                        “He did a fantastic job”
+                        “Would definitely hire him again”
+                        “Great communication and service.”"
+        android:width="291dp" />
 
 </LinearLayout>
