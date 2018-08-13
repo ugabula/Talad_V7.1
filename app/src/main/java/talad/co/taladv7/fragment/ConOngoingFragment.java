@@ -1,6 +1,7 @@
 package talad.co.taladv7.fragment;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
@@ -10,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import ng.max.slideview.SlideView;
+import talad.co.taladv7.CountdownTimerActivity;
 import talad.co.taladv7.R;
 
 /**
@@ -64,7 +66,7 @@ public class ConOngoingFragment extends Fragment {
 //                vibrator.vibrate(100);
 
                 // go to a new activity
-                //startActivity(new Intent(getContext(), CallDialog.class));
+                startActivity(new Intent(getActivity(), CountdownTimerActivity.class));
             }
         });
         return v;

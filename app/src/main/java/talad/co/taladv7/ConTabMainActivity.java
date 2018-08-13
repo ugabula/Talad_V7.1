@@ -76,12 +76,15 @@ public class ConTabMainActivity extends AppCompatActivity {
         //if you want to update the items at a later time it is recommended to keep it in a variable
         PrimaryDrawerItem item1 = new PrimaryDrawerItem().withIdentifier(1).withName("Home");//Hard coded string
         SecondaryDrawerItem item2 = new SecondaryDrawerItem().withIdentifier(2).withName("Edit Profile");
-        SecondaryDrawerItem item3 = new SecondaryDrawerItem().withIdentifier(3).withName("Payment");
-        SecondaryDrawerItem item4 = new SecondaryDrawerItem().withIdentifier(4).withName("Support");
-        SecondaryDrawerItem item5 = new SecondaryDrawerItem().withIdentifier(5).withName("Feedback");
-        SecondaryDrawerItem item6 = new SecondaryDrawerItem().withIdentifier(6).withName("Settings");
-        SecondaryDrawerItem item7 = new SecondaryDrawerItem().withIdentifier(7).withName("Switch Mode");
-        SecondaryDrawerItem item8 = new SecondaryDrawerItem().withIdentifier(8).withName("LogOut").withIcon(R.drawable.user);
+        SecondaryDrawerItem item3 = new SecondaryDrawerItem().withIdentifier(3).withName("Your Services");
+        SecondaryDrawerItem item4 = new SecondaryDrawerItem().withIdentifier(4).withName("Your Machinery");
+        SecondaryDrawerItem item5 = new SecondaryDrawerItem().withIdentifier(5).withName("Your Availability");
+        SecondaryDrawerItem item6 = new SecondaryDrawerItem().withIdentifier(6).withName("Payment");
+        SecondaryDrawerItem item7 = new SecondaryDrawerItem().withIdentifier(7).withName("Support");
+        SecondaryDrawerItem item8 = new SecondaryDrawerItem().withIdentifier(8).withName("Feedback");
+        SecondaryDrawerItem item9 = new SecondaryDrawerItem().withIdentifier(9).withName("Settings");
+        SecondaryDrawerItem item10 = new SecondaryDrawerItem().withIdentifier(10).withName("Switch Mode");
+        SecondaryDrawerItem item11 = new SecondaryDrawerItem().withIdentifier(11).withName("LogOut").withIcon(R.drawable.user);
 
         //create the drawer and remember the `Drawer` result object
         Drawer result = new DrawerBuilder()
@@ -91,14 +94,17 @@ public class ConTabMainActivity extends AppCompatActivity {
                 .addDrawerItems(
                         item1,
                         item2,
-                        new DividerDrawerItem(),//divides draws
                         item3,
                         item4,
                         item5,
+                        new DividerDrawerItem(),//divides draws
                         item6,
                         item7,
-                        new DividerDrawerItem(),
                         item8,
+                        item9,
+                        item10,
+                        new DividerDrawerItem(),
+                        item11,
                         new SecondaryDrawerItem()
 
                 )
@@ -112,33 +118,37 @@ public class ConTabMainActivity extends AppCompatActivity {
                                 startActivity(i);
                                 break;
                             case 2 :
-                                Intent intent = new Intent(getApplicationContext(), FarmerCreateAccActivity.class);
+                                Intent intent = new Intent(getApplicationContext(), ContractorProfileActivity.class);
                                 startActivity(intent);
                                 break;
                             case 3 :
+                                Intent service = new Intent(getApplicationContext(), ConServicesActivity.class);
+                                startActivity(service);
                                 break;
                             case 4 :
-                                Intent pay = new Intent(getApplicationContext(), FarmerPayActivity.class);
+                                Intent pay = new Intent(getApplicationContext(), ConAddMachinery.class);
                                 startActivity(pay);
                                 break;
                             case 5 :
-                                Intent support = new Intent(getApplicationContext(), FarmerSupportMenu.class);
+                                Intent support = new Intent(getApplicationContext(), ConAvailableActivity.class);
                                 startActivity(support);
                                 break;
                             case 6 :
-                                Intent feedback = new Intent(getApplicationContext(), FeedbackActivity.class);
-                                startActivity(feedback);
                                 break;
                             case 7 :
-                                Intent settings = new Intent(getApplicationContext(), LanSelectActivity.class);
-                                startActivity(settings);
+                                Intent feedback = new Intent(getApplicationContext(), PaymentActivity.class);
+                                startActivity(feedback);
                                 break;
                             case 8 :
-                                Intent mode = new Intent(getApplicationContext(), FarmerChooseServiceActivity.class);
-                                startActivity(mode);
+                                Intent settings = new Intent(getApplicationContext(), FarmerSupportMenu.class);
+                                startActivity(settings);
                                 break;
                             case 9 :
-                                Intent logout = new Intent(getApplicationContext(), FarmerPayActivity.class);
+                                Intent mode = new Intent(getApplicationContext(), FeedbackActivity.class);
+                                startActivity(mode);
+                                break;
+                            case 10 :
+                                Intent logout = new Intent(getApplicationContext(), ConSettingsActivity.class);
                                 startActivity(logout);
                         }
                         return true;

@@ -69,6 +69,9 @@ dependencies {
     //slide button
     implementation 'com.shitij.goyal:slide-button:1.0.0'
     implementation 'com.github.MAXDeliveryNG:slideview:1.1.0'
+
+    //Progress Wheel
+    //compile project(':ProgressWheel')
 }
 
 configurations.all {

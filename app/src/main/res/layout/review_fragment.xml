@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center">
 
-    <TextView
-        android:height="272dp"
+    <EditText
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
         android:lineSpacingMultiplier="1.14"
-        android:text="                      “He did a fantastic job”
-                        “Would definitely hire him again”
-                        “Great communication and service.”
-                        “He did a fantastic job”
-                        “Would definitely hire him again”
-                        “Great communication and service.”
-                        “He did a fantastic job”
-                        “Would definitely hire him again”
-                        “Great communication and service.”"
-        android:width="291dp" />
+        android:inputType="textMultiLine"
+        android:text="“He did a fantastic job”
 
-</LinearLayout>
+                      “Would definitely hire him again”
+
+                      “Great communication and service.”
+
+                      “He did a fantastic job”
+
+                      “Would definitely hire him again”
+
+                      “Great communication and service.”
+
+                      “He did a fantastic job”
+
+                      “Would definitely hire him again”
+
+                      “Great communication and service.”" />
+
+</RelativeLayout>

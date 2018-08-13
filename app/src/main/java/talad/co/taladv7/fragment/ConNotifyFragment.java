@@ -5,7 +5,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
+import talad.co.taladv7.NotifyDialog;
 import talad.co.taladv7.R;
 
 /**
@@ -13,6 +15,8 @@ import talad.co.taladv7.R;
  */
 
 public class ConNotifyFragment extends Fragment {
+
+    private ImageView imageView56;
 
     public ConNotifyFragment() {
     }
@@ -30,8 +34,22 @@ public class ConNotifyFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(final LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.con_fragment_notifications, container, false);
+        View v = inflater.inflate(R.layout.con_fragment_notifications, container, false);
+        imageView56 = (ImageView) v.findViewById(R.id.imageView56);
+        imageView56.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDialog();
+            }
+        });
+
+        return v;
+    }
+
+    private void openDialog() {
+        NotifyDialog notifyDialog = new NotifyDialog();
+        notifyDialog.show(getFragmentManager(), "Furrow");
     }
 }

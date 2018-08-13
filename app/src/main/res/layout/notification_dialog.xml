@@ -1,67 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/imageView57"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:src="@drawable/user" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="151dp"
-        android:layout_height="25dp"
-        android:layout_below="@+id/imageView57"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingTop="1dp"
-        android:text="Hien Huynh"
-        android:textColor="#111"
-        android:textSize="21dp" />
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="151dp"
-        android:layout_height="14dp"
-        android:layout_alignStart="@+id/textView17"
-        android:layout_below="@+id/imageView57"
-        android:layout_marginTop="27dp"
-        android:gravity="center"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:text="Chang Wat Khon Kaen"
-        android:textColor="#111"
-        android:textSize="12dp" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="14dp"
-        android:layout_below="@+id/textView18"
-        android:layout_toEndOf="@+id/imageView56"
-        android:gravity="center"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:text="CONTRACTOR"
-        android:textColor="@color/talad_green"
-        android:textSize="12dp" />
-
-    <RatingBar
-        android:id="@+id/ratingBar"
-        style="?android:attr/ratingBarStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView18"
-        android:layout_marginStart="11dp"
-        android:layout_toEndOf="@+id/textView20"
-        android:isIndicator="true"
-        android:numStars="5"
-        android:stepSize="0.1" />
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:paddingBottom="10dp">
 
     <ImageView
         android:layout_width="81dp"
@@ -79,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/imageView56"
         android:layout_toEndOf="@+id/imageView56"
-        android:text="Primary Ploughing"
+        android:text="Furrowing"
         android:textSize="22sp" />
 
     <TextView
@@ -123,9 +65,8 @@
         android:id="@+id/imageButton2"
         android:layout_width="19dp"
         android:layout_height="19dp"
-        android:layout_alignEnd="@+id/textView4"
-        android:layout_below="@+id/imageView56"
-        android:layout_marginTop="26dp"
+        android:layout_alignBottom="@+id/textView37"
+        android:layout_alignEnd="@+id/textView35"
         android:background="@drawable/phone"
         android:src="@drawable/small_phone" />
 
@@ -175,7 +116,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/textView39"
-        android:layout_alignEnd="@+id/textView1"
+        android:layout_toEndOf="@+id/textView4"
         android:text="Time"
         android:textColor="@color/talad_green"
         android:textSize="12sp" />
@@ -222,50 +163,33 @@
         android:id="@+id/textView43"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView42"
+        android:layout_alignStart="@+id/textView39"
         android:layout_below="@+id/textView42"
         android:text="B910"
-        android:textSize="17sp"/>
+        android:textSize="17sp" />
 
-    <ng.max.slideview.SlideView
-        android:id="@+id/slideView"
-        android:layout_width="330dp"
-        android:layout_height="50dp"
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignStart="@+id/textView41"
         android:layout_below="@+id/textView43"
-        android:layout_marginTop="31dp"
-        android:layout_toEndOf="@+id/textView40"
-        app:sv_animateSlideText="true"
-        app:sv_buttonBackgroundColor="@color/greyish"
-        app:sv_buttonImage="@drawable/ic_play_arrow"
-        app:sv_buttonImageDisabled="@drawable/ic_do_not_disturb"
-        app:sv_reverseSlide="false"
-        app:sv_slideBackgroundColor="@color/talad_green"
-        app:sv_slideText="Slide to Start"
-        app:sv_slideTextColor="@color/white"
-        app:sv_slideTextSize="20sp"
-        app:sv_strokeColor="@color/talad_green" />
+        android:layout_marginTop="11dp"
+        android:text="Accept Job"
+        android:background="@color/talad_green"
+        android:textColor="@color/white"
+        android:paddingBottom="5dp"/>
 
-    <!--<com.shitij.goyal.slidebutton.SwipeButton-->
-        <!--android:id="@+id/slide"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="50dp"-->
-        <!--android:layout_alignParentStart="true"-->
-        <!--android:layout_below="@+id/textView43"-->
-        <!--android:layout_marginTop="11dp"-->
-        <!--android:background="@drawable/rect6"-->
-        <!--android:backgroundTint="@color/talad_green"-->
-        <!--android:text="Slide to Start"-->
-        <!--android:textColor="@color/white"-->
-        <!--android:textAlignment="center"-->
-        <!--android:gravity="center"-->
-        <!--android:textSize="20sp"-->
-        <!--app:after_confirmation_background="#e96251"-->
-        <!--app:button_confirm_text="Cancel"-->
-        <!--app:button_swipe_text="Slide"-->
-        <!--app:gradient_color_1="@color/talad_green"-->
-        <!--app:gradient_color_2="#e96251"-->
-        <!--app:gradient_color_2_width="100dp"-->
-        <!--app:swipe_mode="mirror"-->
-        <!--app:threshold="0.9" />-->
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_toEndOf="@+id/button5"
+        android:background="@color/greyish"
+        android:text="Decline Job"
+        android:textColor="@color/black"
+        android:paddingBottom="5dp"/>
 
 </RelativeLayout>

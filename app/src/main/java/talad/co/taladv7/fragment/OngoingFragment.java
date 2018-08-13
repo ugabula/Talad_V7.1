@@ -2,6 +2,7 @@ package talad.co.taladv7.fragment;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatDialogFragment;
@@ -9,8 +10,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 
+import talad.co.taladv7.FarmerBuyServices;
 import talad.co.taladv7.R;
 
 /**
@@ -20,6 +23,7 @@ import talad.co.taladv7.R;
 public class OngoingFragment extends AppCompatDialogFragment {
 
     private ImageButton btnCall;
+    private Button btnReq;
 
     public OngoingFragment() {
     }
@@ -78,6 +82,14 @@ public class OngoingFragment extends AppCompatDialogFragment {
 
                     }
                 });
+            }
+        });
+        btnReq = (Button) v.findViewById(R.id.btnReq);
+        btnReq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent req = new Intent(getActivity(), FarmerBuyServices.class);
+                startActivity(req);
             }
         });
 

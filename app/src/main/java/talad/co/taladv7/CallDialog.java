@@ -26,13 +26,13 @@ public class CallDialog extends AppCompatDialogFragment {
 
         builder.setView(view)
                 //.setTitle("Call")
-                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Cancel \n", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
                     }
                 })
-                .setPositiveButton("Call", new DialogInterface.OnClickListener() {
+                .setPositiveButton("Call \n", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 

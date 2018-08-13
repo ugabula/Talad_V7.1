@@ -1,6 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView56"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="86dp"
+        android:src="@drawable/tractor3" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView56"
+        android:layout_toEndOf="@+id/imageView56"
+        android:text="Jon Deere"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:layout_below="@+id/textView4"
+        android:layout_toEndOf="@+id/imageView56"
+        android:text="Primary Ploughing"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="259dp"
+        android:layout_height="12dp"
+        android:layout_below="@+id/textView1"
+        android:layout_toEndOf="@+id/imageView56"
+        android:text="Model 173209"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_toEndOf="@+id/imageView56"
+        android:text="500 hrs"
+        android:textSize="10sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignTop="@+id/textView1"
+        app:srcCompat="@drawable/ic_edit_black"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:id="@+id/imageView57"
+        android:layout_width="81dp"
+        android:layout_height="81dp"
+        android:layout_alignStart="@+id/imageView56"
+        android:layout_below="@+id/imageView56"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="37dp"
+        android:src="@drawable/tractor6" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView57"
+        android:layout_toEndOf="@+id/imageView57"
+        android:text="Mahindra"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:layout_below="@+id/textView8"
+        android:layout_toEndOf="@+id/imageView57"
+        android:text="Secondary Ploughing"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="259dp"
+        android:layout_height="12dp"
+        android:layout_below="@+id/textView5"
+        android:layout_toEndOf="@+id/imageView57"
+        android:text="Model 234590"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_toEndOf="@+id/imageView57"
+        android:text="650 hrs"
+        android:textSize="10sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView7"
+        android:layout_alignTop="@+id/textView5"
+        android:background="@color/white"
+        app:srcCompat="@drawable/ic_edit_black" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView57"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="@color/white"
+        android:text="Add more machinery" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:text="Your machinery"
+        android:textColor="@color/talad_green"
+        android:textSize="17sp"/>
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView56"
+        android:layout_alignTop="@+id/textView46"
+        app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp"
+        android:background="@color/white"/>
+
+</RelativeLayout>

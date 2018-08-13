@@ -203,4 +203,13 @@
     <color name="maincolor">#048c0b</color>
     <color name="farmer">#046481</color>
     <color name="new_green">#FF5EB462</color>
+
+    <color name="mid_gray">#605F64</color>
+    <color name="gray_text">#7F8285</color>
+    <color name="rim_color_gray">#B0B0B0</color>
+    <color name="center_text">#D31145</color>
+    <color name="round_progress_blue">#2173B9</color>
+
+    <color name="colorBackground">#151B29</color>
+    <color name="colorYellow">#F5FA55</color>
 </resources>

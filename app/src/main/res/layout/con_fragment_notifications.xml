@@ -75,20 +75,20 @@
         android:src="@drawable/map_corner"
         android:id="@+id/imageView56" />
 
-    <Button
-        android:id="@+id/btnReq"
-        style="@style/cont"
-        android:layout_width="234dp"
-        android:layout_height="57dp"
-        android:layout_below="@+id/imageView2"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="bottom|center"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/rect6"
-        android:backgroundTint="@color/talad_green"
-        android:text="Request a Contractor"
-        android:textColor="@android:color/white"
-        android:textStyle="bold" />
+    <!--<Button-->
+        <!--android:id="@+id/btnReq"-->
+        <!--style="@style/cont"-->
+        <!--android:layout_width="234dp"-->
+        <!--android:layout_height="57dp"-->
+        <!--android:layout_below="@+id/imageView2"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_gravity="bottom|center"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:background="@drawable/rect6"-->
+        <!--android:backgroundTint="@color/talad_green"-->
+        <!--android:text="Request a Contractor"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textStyle="bold" />-->
 
     <TextView
         android:id="@+id/textView1"
@@ -103,10 +103,10 @@
         android:id="@+id/textView2"
         android:layout_width="42dp"
         android:layout_height="12dp"
-        android:layout_alignEnd="@+id/btnReq"
+        android:layout_alignEnd="@+id/imageButton2"
         android:layout_alignTop="@+id/textView1"
         android:text="June 12"
-        android:textSize="10sp"/>
+        android:textSize="10sp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -142,7 +142,7 @@
         android:layout_width="19dp"
         android:layout_height="19dp"
         android:layout_alignBottom="@+id/textView5"
-        android:layout_alignEnd="@+id/textView2"
+        android:layout_toEndOf="@+id/ratingBar"
         android:background="@drawable/phone"
         android:src="@drawable/small_phone" />
 

@@ -58,15 +58,15 @@ public class ConChooseServiceActivity extends AppCompatActivity {
         //if you want to update the items at a later time it is recommended to keep it in a variable
         PrimaryDrawerItem item1 = new PrimaryDrawerItem().withIdentifier(1).withName("Home");//Hard coded string
         SecondaryDrawerItem item2 = new SecondaryDrawerItem().withIdentifier(2).withName("Edit Profile");
-        SecondaryDrawerItem item3 = new SecondaryDrawerItem().withIdentifier(2).withName("Your Services");
-        SecondaryDrawerItem item4 = new SecondaryDrawerItem().withIdentifier(2).withName("Your Machinery");
-        SecondaryDrawerItem item5 = new SecondaryDrawerItem().withIdentifier(2).withName("Your Availability");
-        SecondaryDrawerItem item6 = new SecondaryDrawerItem().withIdentifier(3).withName("Payment");
-        SecondaryDrawerItem item7 = new SecondaryDrawerItem().withIdentifier(4).withName("Support");
-        SecondaryDrawerItem item8 = new SecondaryDrawerItem().withIdentifier(5).withName("Feedback");
-        SecondaryDrawerItem item9 = new SecondaryDrawerItem().withIdentifier(6).withName("Settings");
-        SecondaryDrawerItem item10 = new SecondaryDrawerItem().withIdentifier(7).withName("Switch Mode");
-        SecondaryDrawerItem item11 = new SecondaryDrawerItem().withIdentifier(8).withName("LogOut").withIcon(R.drawable.user);
+        SecondaryDrawerItem item3 = new SecondaryDrawerItem().withIdentifier(3).withName("Your Services");
+        SecondaryDrawerItem item4 = new SecondaryDrawerItem().withIdentifier(4).withName("Your Machinery");
+        SecondaryDrawerItem item5 = new SecondaryDrawerItem().withIdentifier(5).withName("Your Availability");
+        SecondaryDrawerItem item6 = new SecondaryDrawerItem().withIdentifier(6).withName("Payment");
+        SecondaryDrawerItem item7 = new SecondaryDrawerItem().withIdentifier(7).withName("Support");
+        SecondaryDrawerItem item8 = new SecondaryDrawerItem().withIdentifier(8).withName("Feedback");
+        SecondaryDrawerItem item9 = new SecondaryDrawerItem().withIdentifier(9).withName("Settings");
+        SecondaryDrawerItem item10 = new SecondaryDrawerItem().withIdentifier(10).withName("Switch Mode");
+        SecondaryDrawerItem item11 = new SecondaryDrawerItem().withIdentifier(11).withName("LogOut").withIcon(R.drawable.user);
 
         //create the drawer and remember the `Drawer` result object
         Drawer result = new DrawerBuilder()
@@ -100,13 +100,15 @@ public class ConChooseServiceActivity extends AppCompatActivity {
                                 startActivity(i);
                                 break;
                             case 2 :
-                                Intent intent = new Intent(getApplicationContext(), FarmerCreateAccActivity.class);
+                                Intent intent = new Intent(getApplicationContext(), ContractorProfileActivity.class);
                                 startActivity(intent);
                                 break;
                             case 3 :
+                                Intent service = new Intent(getApplicationContext(), ConServicesActivity.class);
+                                startActivity(service);
                                 break;
                             case 4 :
-                                Intent pay = new Intent(getApplicationContext(), FarmerPayActivity.class);
+                                Intent pay = new Intent(getApplicationContext(), ConAddMachinery.class);
                                 startActivity(pay);
                                 break;
                             case 5 :

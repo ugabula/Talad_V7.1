@@ -28,7 +28,7 @@ public class TabMainActivity extends AppCompatActivity {
 
         //Add fragments
         adapter.AddFragment(new FragmentInfo(), "Info");
-        adapter.AddFragment(new FragmentReview(), "Review");
+        adapter.AddFragment(new FragmentReview(), "Reviews");
 
         //adapter setup
         viewPager.setAdapter(adapter);

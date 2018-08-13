@@ -2,6 +2,7 @@ package talad.co.taladv7;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,7 +11,7 @@ import android.view.ViewGroup;
  * Created by cvanderhaar on 2018/06/29.
  */
 
-public class FragmentReview extends android.support.v4.app.Fragment {
+public class FragmentReview extends Fragment {
 
     View view;
 

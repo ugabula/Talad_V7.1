@@ -62,6 +62,8 @@ public class BottomTabsActivity extends AppCompatActivity {
 //        toolbar.setTitle("Ongoing");
         loadFragment(new OngoingFragment());
 
+        //FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
         //NAV DRAWER STARTS Account header for Nav drawer
         // Create the AccountHeader
         AccountHeader headerResult = new AccountHeaderBuilder()

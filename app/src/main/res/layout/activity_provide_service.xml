@@ -15,7 +15,7 @@
         android:id="@+id/backarrow"
         android:layout_width="11dp"
         android:layout_height="20dp"
-        android:src="@drawable/ic_blue_arrow_back"
+        android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
         android:background="@color/white"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
@@ -28,11 +28,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/btnCont"
-        android:text="What services do you want to Buy?"
+        android:text="What services will you Provide?"
         android:textAlignment="center"
-        android:textColor="@color/blue"
+        android:textColor="@color/talad_green"
         android:textSize="20sp" />
-    
+
     <ImageView
         android:layout_width="55dp"
         android:layout_height="48dp"
@@ -93,7 +93,8 @@
         android:layout_marginStart="23dp"
         android:layout_marginTop="11dp"
         android:textStyle="bold"
-        android:textSize="17sp"/>
+        android:textSize="17sp"
+        android:id="@+id/textView44" />
 
     <ImageView
         android:id="@+id/rice"
@@ -146,8 +147,49 @@
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="27dp"
         android:background="@drawable/rect6"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/talad_green"
         android:text="Continue"
         android:textColor="@color/white" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/corntext"
+        android:layout_alignTop="@+id/corn"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/feedback" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cassavatext"
+        android:layout_alignStart="@+id/numberPicker"
+        android:layout_alignTop="@+id/cassava" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView44"
+        android:layout_alignStart="@+id/numberPicker2"
+        android:layout_alignTop="@+id/mielies" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ricetext"
+        android:layout_alignStart="@+id/numberPicker4"
+        android:layout_alignTop="@+id/rice" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pinetext"
+        android:layout_alignStart="@+id/numberPicker5"
+        android:layout_alignTop="@+id/pineapple" />
 
 </RelativeLayout>
