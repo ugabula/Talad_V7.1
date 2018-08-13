@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".map.NiboMainActivity"
+    android:background="@mipmap/map2"
+    tools:showIn="@layout/nibo_map">
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_picker"
+        android:layout_margin="16dp"
+        android:text="LAUNCH LOCATION PICKER"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/login_button_selector"
+        android:textColor="@color/bluelight"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/origin_destination_picker"
+        android:layout_margin="16dp"
+        android:text="LAUNCH ORIGIN-DESTINATION PICKER"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/login_button_selector"
+        android:textColor="@color/bluelight" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mark_your_farm"
+        android:layout_margin="16dp"
+        android:text="LAUNCH MAP AND OUTLINE YOUR FARM"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/login_button_selector"
+        android:textColor="@color/bluelight" />
+
+</LinearLayout>

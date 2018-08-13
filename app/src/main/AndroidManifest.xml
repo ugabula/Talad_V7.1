@@ -58,6 +58,10 @@
         <activity android:name=".ConAddMachinery"/>
         <activity android:name=".ConAvailableActivity"/>
         <activity android:name=".ConSettingsActivity"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
     </application>
 
 </manifest>
