@@ -58,10 +58,16 @@
         <activity android:name=".ConAddMachinery"/>
         <activity android:name=".ConAvailableActivity"/>
         <activity android:name=".ConSettingsActivity"/>
+        <activity android:name=".map.MapSearchActivity"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+        <activity
+            android:name="com.alium.nibo.origindestinationpicker.NiboOriginDestinationPickerActivity"
+            android:label="@string/title_activity_origin_destination_picker"
+            android:theme="@style/NiboOrigDestTheme.NoActionBar"
+            tools:replace="android:theme" />
     </application>
 
 </manifest>

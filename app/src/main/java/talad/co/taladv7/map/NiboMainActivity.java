@@ -83,7 +83,7 @@ public class NiboMainActivity extends AppCompatActivity implements OnMapReadyCal
         btnMark.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent overlay = new Intent(NiboMainActivity.this, MapActivity.class);
+                Intent overlay = new Intent(NiboMainActivity.this, MapSearchActivity.class);
                 startActivity(overlay);
 //                Intent intent = new Intent(android.content.Intent.ACTION_VIEW,
 //                Uri.parse("https://maps.google.ch/maps?saddr=Oklahoma City, OK, USA&daddr=Los Angeles, CA, USA to:41.8525800,-87.6514100 to: 41.8107300,-87.6012600"));
